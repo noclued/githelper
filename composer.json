@@ -1,0 +1,17 @@
+{
+  "name": "noclued/githelper",
+  "type": "library",
+  "description": "Helper for git extra info like 'get file names changed in last two commits', 'get new lines from last two commits', etc. You need to have accessable git!",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "noclue",
+      "email": "noclue@yitd.pl"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Noclue\\GitHelper\\": "src/"
+    }
+  }
+}
