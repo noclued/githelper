@@ -72,7 +72,7 @@ class Helper
             throw new RunTimeException('Git not found on host!');
         }
 
-        $command = "git status";
+        $command = "git log --name-status HEAD^..HEAD";
         $exec = new Exec($command);
         $result = $exec->exec();
         if ($result->getReturnCode() !== 0) {
