@@ -55,7 +55,7 @@ class Helper
         foreach ($lines as $line) {
             preg_match($pattern, $line, $matches);
             if (count($matches) == 2) {
-                $retValue[] = $matches[1];
+                $retValue[] = str_replace(['+}', '-}', '{+', '{-'], '', $matches[1]);
             }
         }
 
